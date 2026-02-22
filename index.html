@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sakib Ahmed | Software Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo">Sakib Ahmed</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contacts</a></li>
+    </ul>
+  </div>
+</nav>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="header-text">
+        <p class="greeting">Hello, I’m Sakib Ahmed</p>
+        <h1 class="name">Sakib Ahmed</h1>
+        <p class="title">Software Developer</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+      </div>
+      <div class="header-portrait" aria-label="Portrait of Sakib Ahmed">
+        <img src="assets\WhatsApp Image 2026-02-15 at 10.10.23 AM.jpeg" alt="Portrait of Sakib Ahmed" />
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="bio">
+        I’m a friendly, passionate software developer who loves turning ideas into elegant, maintainable software. I enjoy building clean interfaces and robust backends, collaborating with teams to deliver measurable impact.
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Projects completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Client satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-grid" aria-label="Skills (excluding App Development)">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        <li>React</li><li>Next.js</li><li>UI/UX</li>
+        <li>Node.js</li><li>APIs</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-thumb" aria-label="Battleship project image placeholder"></div>
+          <h3>Battleship</h3>
+          <p class="project-desc">A responsive Battleship game with a clean UI and basic AI.</p>
+          <a href="#" class="btn btn-sm">View project</a>
+        </article>
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-thumb" aria-label="Javascript Calculator image placeholder"></div>
+          <h3>Javascript Calculator</h3>
+          <p class="project-desc">A reliable calculator with supporting operations and clean code.</p>
+          <a href="#" class="btn btn-sm">View project</a>
+        </article>
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-thumb" aria-label="Movie Titles API image placeholder"></div>
+          <h3>Movie Titles API</h3>
+          <p class="project-desc">A simple API to fetch and display movie titles with metadata.</p>
+          <a href="#" class="btn btn-sm">View project</a>
+        </article>
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-thumb" aria-label="SaaS Landing Page image placeholder"></div>
+          <h3>SaaS Landing Page</h3>
+          <p class="project-desc">A polished marketing landing page for a SaaS product.</p>
+          <a href="#" class="btn btn-sm">View project</a>
+        </article>
+        <!-- Optional placeholders (up to 2) -->
+        <article class="project-card placeholder">
+          <div class="project-thumb"></div>
+          <h3>Placeholder Project</h3>
+          <p class="project-desc">Description you can customize later.</p>
+          <a href="#" class="btn btn-sm">View project</a>
+        </article>
+        <article class="project-card placeholder">
+          <div class="project-thumb"></div>
+          <h3>Placeholder Project</h3>
+          <p class="project-desc">Description you can customize later.</p>
+          <a href="#" class="btn btn-sm">View project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <h2>Have a project? Let’s talk!</h2>
+        <p>Fill out the form and I’ll get back to you soon.</p>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Sakib Ahmed. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
